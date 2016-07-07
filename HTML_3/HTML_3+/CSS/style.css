@@ -26,12 +26,12 @@ header>a>img {
 	margin-top: 95px;
 	margin-right: 15px;
 }
-.contacts>span {
+.contacts>p {
 	display: block;
 	color: #e5e5e5;
 	font-size: 8px;
 }
-.contacts>span:first-child {
+.contacts>p:first-child {
 	font-size: 12px;
 	line-height: 18px;		
 }
@@ -54,11 +54,12 @@ header>a>img {
 	opacity:.5;
 }
 .item {
-	height: 178px;
+	width: 259px;
+	height: 176px;
 	border: 1px solid #9b9b9b;
-	-webkit-box-shadow: 0px 0px 1px 2px rgba(105,105,105,1);
-	-moz-box-shadow: 0px 0px 1px 2px rgba(105,105,105,1);
-	box-shadow: 0px 0px 1px 2px rgba(105,105,105,1);
+	-webkit-box-shadow: 0px 0px 1px 2px rgba(105,105,105,1), inset 0px 0px 2px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 1px 2px rgba(105,105,105,1), inset 0px 0px 2px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 1px 2px rgba(105,105,105,1), inset 0px 0px 2px 2px rgba(0,0,0,0.75);
 	overflow: hidden;
 	margin-bottom: 3px;
 	border-radius: 1px;
@@ -67,7 +68,24 @@ header>a>img {
 	color: #e5e5e5;
 	font-size: 15px;
 }
-
+.india {
+	background:  url(../img/india.jpg) center no-repeat;
+}
+.nepal {
+	background:  url(../img/nepal.jpg) center no-repeat;
+}
+.tibet {
+	background:  url(../img/tibet.jpg) center no-repeat;
+}
+.sri-lanka {
+	background:  url(../img/sri-lanka.jpg) center no-repeat;
+}
+.maldives {
+	background:  url(../img/maldives.jpg) center no-repeat;
+}
+.bhutan {
+	background:  url(../img/bhutan.jpg) center no-repeat;
+}
 footer {
 	margin-top: 175px;
 	text-align: center;

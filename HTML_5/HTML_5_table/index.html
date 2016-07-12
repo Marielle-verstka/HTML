@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>TABLE</title>
+   <link rel="stylesheet" href="css/reset-min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <h1>Композиция с красным, синим и желтым</h1>
+   <table> <!-- colspan rowspan -->
+      <tr class="line1">
+         <td class="cell1" colspan="2"></td>
+         <td class="cell3" colspan="2"></td>
+         <td class="cell5" colspan="2"></td>
+      </tr>
+      <tr class="line2">
+         <td class="cell1"></td>
+         <td class="cell2" colspan="3" rowspan="2"></td>
+         <td class="cell5" colspan="2"></td>
+      </tr>
+      <tr class="line3">
+         <td class="cell1" rowspan="2"></td>
+         <td class="cell5"></td>
+         <td class="cell6"></td>
+      </tr>
+      <tr class="line4">
+         <td class="cell2"></td>
+         <td class="cell3"></td>
+         <td class="cell4"></td>
+         <td class="cell5" colspan="2"></td>
+      </tr>
+      <tr class="line5">
+         <td class="cell1" rowspan="3"></td>
+         <td class="cell2"></td>
+         <td class="cell3"></td>
+         <td class="cell4"></td>
+         <td class="cell5" colspan="2" rowspan="2"></td>
+      </tr>
+      <tr class="line6">
+         <td class="cell2" colspan="2" rowspan="2"></td>
+         <td class="cell4"></td>
+      </tr>
+      <tr class="line7">
+         <td class="cell4" colspan="3"></td>
+      </tr>
+   </table>
+</body>	
+</html>

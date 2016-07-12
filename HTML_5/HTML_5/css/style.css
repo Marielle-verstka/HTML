@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'Helvetica Neue Thin';
+    src: url('../fonts/helveticaneuecyr-thin-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-thin-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-thin-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-thin-webfont.svg#helveticaneuecyrthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url('../fonts/helveticaneuecyr-bold-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-bold-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-bold-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-bold-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneuecyr-bold-webfont.svg#helveticaneuecyrbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+header {
+/* 	max-width: 1215px; */
+	background-image: url(../img/bg-menu.jpg);
+	background-repeat: repeat-ч;
+	margin: 0 auto;
+	text-align: right;
+	font-size: 0;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.menu, 
+.menu ul li, 
+.menu ul li a, 
+.panel,
+.app {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0;
+}
+.menu {
+	background: url(../img/bg-line1.jpg) no-repeat center right;
+}
+.menu ul li a, 
+.app,
+.user,
+.entrar,
+.cadastre {
+	line-height: 36px;
+	color: #5fb5ec;
+	font-family: 'Helvetica Neue Thin', "Tahoma", sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	transition: .3s linear;
+}
+.menu ul li a {
+	box-sizing: border-box;
+}
+.menu ul li a:hover {
+	background: #4eabda;
+	color: #fff;
+}
+.bike{
+	padding: 0px 13px 0px 13px;
+}
+.vender{
+	padding: 0px 12px 0px 13px;
+}
+.forum{
+	padding: 0px 13px 0px 12px;
+}
+.contato{
+	padding: 0px 15px 0px 14px;
+}
+.ajuda{
+	padding: 0px 22px 0px 16px;
+}
+.app {
+	position: relative;
+	padding: 0px 17px 0px 50px;
+}
+.app::before {
+	content:'';
+	display: inline-block;
+	position: absolute;
+	width: 27px;
+	height: 31px;
+	background: url(../img/flag.png) no-repeat center;
+	top: 5px;
+	left: 18px;
+}
+.app {
+	color: #fff;
+}
+.user {
+	padding: 0px 11px 0px 13px;
+	border-left: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	border-right: 1px solid transparent;
+	box-sizing: border-box;
+}
+.user,
+.entrar,
+.cadastre {
+	display: inline-block;
+}
+.decor {
+	display: block;
+	width: 100%;
+	border-top: 2px solid transparent;
+	position: absolute;
+	bottom: 10px;
+	transition: .3s linear;
+}
+.entrar,
+.cadastre {
+	position: relative;
+}
+.entrar:hover .decor,
+.cadastre:hover .decor,
+.entrar:active .decor,
+.cadastre:active .decor {
+	border-top: 2px solid #9ac2e4;
+}
+.user:hover,
+.user:hover .entrar,
+.user:hover .cadastre,
+.user:active,
+.user:active.entrar,
+.user:active .cadastre {
+	color: #fff;
+}
+.user:hover,
+.user:active {
+	background: linear-gradient(to bottom, #50afdc 0%, #3a8ecd 50%, #2e7ac4 100%);
+	border-left: 1px solid #4299d2;
+	border-bottom: 1px solid #4299d2;
+	border-right: 1px solid #4299d2;
+}
+.container {
+	margin: 0 auto;
+	background-image: url(../img/bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	min-height: 650px;
+	position: relative;
+}
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.center-top {
+	width: 560px;
+	color: #fff;
+	font-family: 'Helvetica Neue Thin', "Tahoma", sans-serif;
+	font-size: 24px;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.6);	
+	line-height: 62px;
+	margin-bottom: 1px;
+}
+.center-main {
+	width: 560px; 
+	background: rgba(0, 0, 0, 0.6);
+	padding: 36px 127px 20px 123px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.fb {
+	margin: 0 auto 32px auto;
+	font-size: 0px;
+}
+.facebook {
+	display: inline-block;
+	vertical-align: top;
+	width: 38px;
+	height: 35px;
+	border-radius: 4px 0px 0px 4px;
+	border-top: 1px solid #7588b3;
+	border-right: 1px solid #1f3d73;
+	border-bottom: 1px solid #354167;
+	border-left: 1px solid #354167;
+	background: url(../img/f.png) no-repeat center, linear-gradient(to bottom, #3a5598 0%, #364e8c 50%, #344066 100%);
+	box-sizing: border-box;
+}
+.log-in {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 33px;
+	border-radius: 0px 4px 4px 0px;
+	border-top: 1px solid #7588b3;
+	border-right: 1px solid #405081;
+	border-bottom: 1px solid #354167;
+	border-left: 1px solid #4c66a3;
+	background: linear-gradient(to bottom, #3a5598 0%, #364e8c 50%, #344066 100%);	
+	box-sizing: border-box;
+	padding: 0px 28px 0px 30px;
+}
+.log-in>a {
+	font-family: 'Helvetica Neue Bold', "Tahoma", sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	text-decoration: none;
+	color: #fff;
+	vertical-align: middle;
+	padding-right: 30px;
+	position: relative;
+}
+.log-in>a::after {
+	content:"";
+	width: 8px;
+	height: 11px;
+	position: absolute;
+	top: 5px;
+	right: 0px;
+	background: url(../img/ar.png) no-repeat center;
+	display: inline-block;
+}
+.log-in>a>span {
+	font-family: 'Helvetica Neue Thin', "Tahoma", sans-serif;
+}
+.decors {
+	width: 276px;
+	overflow: hidden;
+	text-align: center;
+		margin: 0px 15px 30px 19px;
+}
+.decors>span {
+	width: 100%;
+	display: block;
+	color: #999;
+	font-family: 'Helvetica Neue Thin', "Tahoma", sans-serif;
+	font-size: 14px;
+	position: relative;
+}
+.decors>span::before,
+.decors>span::after {
+	content:"";
+	display: inline-block;
+	width: 44%;
+	position: absolute;
+	top: 5px;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #000;
+}
+.decors>span::before {
+	left: 0px; 
+}
+.decors>span::after {
+	right: 0px;
+}
+form {
+	width: 100%;
+}
+.first-name,
+.last-name,
+.email,
+.password,
+.password-confirm {
+	display:block;
+	width: 276px;
+	height: 36px;
+	padding: 0px 18px;
+	box-sizing: border-box;
+	border: 0;
+	margin: 0px 15px 16px 19px;
+	box-shadow: 0 1px 0 #4b4b4b, inset 0 2px 5px rgba(29,26,22,.2), inset 0 0 2px rgba(0,0,0,.1);
+    background-image: -webkit-linear-gradient(bottom, #111 0%, #0e0d0d 100%);
+    background-image: -o-linear-gradient(bottom, #111 0%, #0e0d0d 100%);
+    background-image: linear-gradient(to top, #111 0%, #0e0d0d 100%);
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Helvetica Neue Thin', "Tahoma", sans-serif;
+}	
+.password-confirm {
+	margin-bottom: 0px;
+}
+.first-name:hover,
+.last-name:hover,
+.email:hover,
+.password:hover,
+.password-confirm:hover,
+.first-name:active,
+.last-name:active,
+.email:active,
+.password:active,
+.password-confirm:active {
+	box-shadow: 0 1px 0 #4b4b4b, 0 0 9px rgba(47,123,197,.77), inset 0 2px 5px rgba(29,26,22,.2), inset 0 0 2px rgba(0,0,0,.1);
+    background-image: -webkit-linear-gradient(bottom, #1b5288 0%, #1b5288 100%);
+    background-image: -o-linear-gradient(bottom, #1b5288 0%, #1b5288 100%);
+    background-image: linear-gradient(to top, #1b5288 0%, #1b5288 100%);
+    border-bottom: 1px solid #689bcf;
+}
+label {
+	display: block; 
+	margin: 21px 15px 21px 19px;
+	text-align: left;
+	vertical-align: middle;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Helvetica Neue Thin', "Tahoma", sans-serif;
+}
+.checkbox {
+	margin: 0px 8px 5px 0px;
+}
+.submit {
+	-moz-box-shadow: 0px -2px 2px 0px rgba(101,168,228,1);
+	box-shadow: 0px -2px 2px 0px rgba(101,168,228,1);
+    background-image: -webkit-linear-gradient(bottom, #50aedb 0%, #2e7ac4 100%);
+    background-image: -o-linear-gradient(bottom, #50aedb 0%, #1b5288 100%);
+    background-image: linear-gradient(to top, #50aedb 0%, #2e7ac4 100%);
+    border: 0px;
+    border-radius: 2px;
+    border-top: 1px solid #69c6e6;
+    padding: 0px;
+    margin: 0px auto 18px auto;
+    color: #fff;
+	font-size: 14px;
+	font-family: 'Helvetica Neue Thin', "Tahoma", sans-serif;
+	padding: 9px 13px;
+	box-sizing: border-box;
+	transition: .1s linear;
+	display: block;
+}
+.submit:hover {
+	background-image: -webkit-linear-gradient(bottom, #2e7ac4 0%, #50aedb 100%);
+    background-image: -o-linear-gradient(bottom, #2e7ac4 0%, #50aedb 100%);
+    background-image: linear-gradient(to top, #2e7ac4 0%, #50aedb 100%);
+}
+form>span {
+	color: #fff;
+	font-size: 11px;
+	font-family: 'Helvetica Neue Thin', "Tahoma", sans-serif;
+}

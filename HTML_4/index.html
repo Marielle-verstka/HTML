@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Asia-HOLIDAYS</title>
+	<link rel="stylesheet" href="css/reset-min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,24 +22,24 @@
 				<p>info@asia-holidays.com</p>
 			</div>
 			<ul class="countries">
-				<li><a href="#"></a>Индия</li>
-				<li><a href="#"></a>Непал</li>
-				<li><a href="#"></a>Тибет</li>
-				<li><a href="#"></a>Бутан</li>
-				<li><a href="#"></a>Шри-Ланка</li>
-				<li><a href="#"></a>Мальдивы</li>
+				<li><a href="#" class="india">Индия</a></li>
+				<li><a href="#"	class="nepal">Непал</a></li>
+				<li><a href="#"	class="tibet">Тибет</a></li>
+				<li><a href="#"	class="bhutan">Бутан</a></li>
+				<li><a href="#"	class="sri-lanka">Шри-Ланка</a></li>
+				<li><a href="#"	class="maldives">Мальдивы</a></li>
 			</ul>
 			</div>
 		</div>
 	</header>
 		<div class="image">
-			<img src="img/photo.png" alt="photo" title="photo">
+			<img src="img/photo.jpg" alt="photo" title="photo">
 		</div>
 		<nav class="main-menu">
 			<ul>
-				<li><a href="#">Главная</a></li>
-				<li><a href="#">Путешествие<span></span></a>
-					<ul class="travel submenu">
+				<li class="main-page"><a href="#">Главная</a></li>
+				<li class="travel-page"><a href="#">Путешествие<span></span></a>
+					<ul class="submenu">
 						<li><a href="#">Путешествие 1</a></li>
 						<li><a href="#">Путешествие 2</a></li>
 						<li><a href="#">Путешествие 3</a></li>
@@ -46,16 +47,16 @@
 						<li><a href="3">Путешествие 5</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Услуги<span></span></a>
-					<ul class="service submenu">
+				<li class="service-page"><a href="#">Услуги<span></span></a>
+					<ul class="submenu">
 						<li><a href="#">Услуга 1</a></li>
 						<li><a href="#">Услуга 2</a></li>
 						<li><a href="#">Услуга 3</a></li>
 						<li><a href="#">Услуга 4</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Партнеры<span></span></a>
-					<ul class="partners submenu">
+				<li class="partners-page"><a href="#">Партнеры<span></span></a>
+					<ul class="submenu">
 						<li><a href="#">Партнеры 1</a></li>
 						<li><a href="#">Партнеры 2</a></li>
 						<li><a href="#">Партнеры 3</a></li>
@@ -63,9 +64,9 @@
 						<li><a href="#">Партнеры 5</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Отзывы клиентов</a></li>
-				<li><a href="#">О нас</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li class="comment-page"><a href="#">Отзывы клиентов</a></li>
+				<li class="about-page"><a href="#">О нас</a></li>
+				<li class="contact-page"><a href="#">Контакты</a></li>
 			</ul>
 		</nav>
 		
@@ -73,7 +74,7 @@
 			<div class="bg-right">
 				<div class="bg-center">
 					<div class="bg-left">
-						<div class="left-column">
+						<div class="left-column clearfix">
 							<h3>Информация</h3>
 							<a href="#">Lorem ipsum dolor sit amet</a>
 							<a href="#">Lorem ipsum dolor sit amet</a>
@@ -84,8 +85,8 @@
 							<a href="#">Lorem ipsum dolor sit amet</a>
 							<a href="#">Lorem ipsum dolor sit amet</a>	
 						</div>
-						<div class="center-column"></div>
-						<div class="right-column">
+						<div class="center-column clearfix"></div>
+						<div class="right-column clearfix">
 							<h3>Новости</h3>
 							<a href="#">Lorem ipsum dolor sit amet</a>
 							<a href="#">Lorem ipsum dolor sit amet</a>

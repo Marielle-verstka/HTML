@@ -136,7 +136,7 @@ header {
 	text-decoration: none;
 	font-size: 14px;
 	transition: .4s linear;
-	padding: 5px 7px;
+	padding: 5px 7px 5px 10px;
 }
 .main-page{
 	padding: 0px 48px 0px 58px;
@@ -162,7 +162,8 @@ header {
 .main-menu>ul>li>a:hover {
 	color:#138aa7;
 }
-.main-menu>ul>li>a>span {
+.triangle::after {
+	content:'';
 	display: inline-block;
 	width: 0;
 	height: 0;
@@ -172,7 +173,7 @@ header {
 	transition: .4s linear;
 	margin-left: 5px;
 }
-.main-menu>ul>li>a:hover span {
+ .triangle:hover::after {
 	transform: rotate(180deg);
 	border-top: 6px solid #138aa7;
 }
@@ -190,20 +191,21 @@ ul.submenu {
 	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
 	transition: .5s easy;
 	box-sizing: border-box;
+	border-top: 1px solid #000;
 }
 ul.submenu>li {
     display: block;
 }
 ul.submenu>li>a {
     display: block;
-    padding: 5px 10px;
+    padding: 5px 45px 5px 10px;
     color: #fff;
     text-decoration: none;
     font-weight: 300;
     font-size: 14px;
 }
 ul.submenu>li>a:hover {
-	text-decoration: underline;
+	color:#138aa7;
 }
 .container {
 	max-width: 1000px;

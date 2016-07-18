@@ -23,7 +23,7 @@
 header {
 /* 	max-width: 1215px; */
 	background-image: url(../img/bg-menu.jpg);
-	background-repeat: repeat-ч;
+	background-repeat: repeat-x;
 	margin: 0 auto;
 	text-align: right;
 	font-size: 0;
@@ -93,17 +93,23 @@ header {
 .app {
 	color: #fff;
 }
+.app:hover {
+	background: #4eabda;
+}
 .user {
 	padding: 0px 11px 0px 13px;
-	border-left: 1px solid transparent;
-	border-bottom: 1px solid transparent;
-	border-right: 1px solid transparent;
+	background: linear-gradient(to bottom, #50afdc 0%, #3a8ecd 50%, #2e7ac4 100%);
+	border-left: 1px solid #4299d2;
+	border-bottom: 1px solid #4299d2;
+	border-right: 1px solid #4299d2;
 	box-sizing: border-box;
 }
 .user,
 .entrar,
 .cadastre {
 	display: inline-block;
+	line-height: 35px;
+	color:#fff;
 }
 .decor {
 	display: block;
@@ -122,21 +128,6 @@ header {
 .entrar:active .decor,
 .cadastre:active .decor {
 	border-top: 2px solid #9ac2e4;
-}
-.user:hover,
-.user:hover .entrar,
-.user:hover .cadastre,
-.user:active,
-.user:active.entrar,
-.user:active .cadastre {
-	color: #fff;
-}
-.user:hover,
-.user:active {
-	background: linear-gradient(to bottom, #50afdc 0%, #3a8ecd 50%, #2e7ac4 100%);
-	border-left: 1px solid #4299d2;
-	border-bottom: 1px solid #4299d2;
-	border-right: 1px solid #4299d2;
 }
 .container {
 	margin: 0 auto;
@@ -280,11 +271,11 @@ form {
 .password-confirm {
 	margin-bottom: 0px;
 }
-.first-name:hover,
-.last-name:hover,
-.email:hover,
-.password:hover,
-.password-confirm:hover,
+.first-name:focus,
+.last-name:focus,
+.email:focus,
+.password:focus,
+.password-confirm:focus,
 .first-name:active,
 .last-name:active,
 .email:active,
@@ -294,7 +285,6 @@ form {
     background-image: -webkit-linear-gradient(bottom, #1b5288 0%, #1b5288 100%);
     background-image: -o-linear-gradient(bottom, #1b5288 0%, #1b5288 100%);
     background-image: linear-gradient(to top, #1b5288 0%, #1b5288 100%);
-    border-bottom: 1px solid #689bcf;
 }
 label {
 	display: block; 
@@ -309,8 +299,6 @@ label {
 	margin: 0px 8px 5px 0px;
 }
 .submit {
-	-moz-box-shadow: 0px -2px 2px 0px rgba(101,168,228,1);
-	box-shadow: 0px -2px 2px 0px rgba(101,168,228,1);
     background-image: -webkit-linear-gradient(bottom, #50aedb 0%, #2e7ac4 100%);
     background-image: -o-linear-gradient(bottom, #50aedb 0%, #1b5288 100%);
     background-image: linear-gradient(to top, #50aedb 0%, #2e7ac4 100%);
@@ -326,6 +314,7 @@ label {
 	box-sizing: border-box;
 	transition: .1s linear;
 	display: block;
+	cursor: pointer;
 }
 .submit:hover {
 	background-image: -webkit-linear-gradient(bottom, #2e7ac4 0%, #50aedb 100%);

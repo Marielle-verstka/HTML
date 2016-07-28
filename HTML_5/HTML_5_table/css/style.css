@@ -28,7 +28,9 @@ td {
 .cell1 {
 	width: 48px;
 }
-.cell2,
+.cell2 {
+	width: 130px;
+}
 .cell3 {
 	width: 60px;
 }

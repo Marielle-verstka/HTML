@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="UTF-8">
 	<title>ZAZOR</title>
 	<link rel="stylesheet" href="css/reset-min.css">
@@ -275,7 +276,8 @@
 		<input type="submit" value="поиск..." class="submit-car">
 	</form><!-- END form .disk -->	
 </aside>
-<aside class="aside-left"><!-- START .aside-left -->
+<main class="clearfix"> <!-- START main -->
+<section class="section-left"><!-- START .section-left -->
 <h2>Каталог продукции:</h2>
 <h3>Шины</h3>
 <nav>
@@ -304,13 +306,13 @@
 		<li><a href="">Наименование 4</a></li>
 	</ul>
 </nav>	
-</aside><!-- END .aside-left -->
-<main>
+</section><!-- END .section-left -->
+	<div class="content">
 	<div class="item-box first">
 		<p class="p-name">Goodyear</p>
 		<p class="p-model">Ultra Grip Extreme</p>
 		<a href="#">
-			<img src="img/1.png" alt="Goodyear-tire" title="Goodyear-tire">
+			<img src="img/1.jpg" alt="Goodyear-tire" title="Goodyear-tire">
 		</a>
 		<p class="p-price"><span class="price">90.00</span>
 		<span class="currency">&nbsp;грн.</span></p>
@@ -319,7 +321,7 @@
 		<p class="p-name">Nokian</p>
 		<p class="p-model">Hakkapeliitta R</p>
 		<a href="#">
-			<img src="img/2.png" alt="Nokian-tire" title="Nokian-tire">
+			<img src="img/2.jpg" alt="Nokian-tire" title="Nokian-tire">
 		</a>
 		<p class="p-price"><span class="price">115.00</span>
 		<span class="currency">&nbsp;грн.</span></p>
@@ -328,7 +330,7 @@
 		<p class="p-name">Hankook</p>
 		<p class="p-model">K 708 155/65 R14</p>
 		<a href="#">
-			<img src="img/3.png" alt="Hankook-tire" title="Hankook-tire">
+			<img src="img/3.jpg" alt="Hankook-tire" title="Hankook-tire">
 		</a>
 		<p class="p-price"><span class="price">393.00</span>
 		<span class="currency">&nbsp;грн.</span></p>
@@ -337,7 +339,7 @@
 		<p class="p-name">Goodyear</p>
 		<p class="p-model">Ultra Grip Extreme</p>
 		<a href="#">
-			<img src="img/1.png" alt="Goodyear-tire" title="Goodyear-tire">
+			<img src="img/1.jpg" alt="Goodyear-tire" title="Goodyear-tire">
 		</a>
 		<p class="p-price"><span class="price">90.00</span>
 		<span class="currency">&nbsp;грн.</span></p>
@@ -346,7 +348,7 @@
 		<p class="p-name">Nokian</p>
 		<p class="p-model">Hakkapeliitta R</p>
 		<a href="#">
-			<img src="img/2.png" alt="Nokian-tire" title="Nokian-tire">
+			<img src="img/2.jpg" alt="Nokian-tire" title="Nokian-tire">
 		</a>
 		<p class="p-price"><span class="price">115.00</span>
 		<span class="currency">&nbsp;грн.</span></p>
@@ -355,7 +357,7 @@
 		<p class="p-name">Hankook</p>
 		<p class="p-model">K 708 155/65 R14</p>
 		<a href="#">
-			<img src="img/3.png" alt="Hankook-tire" title="Hankook-tire">
+			<img src="img/3.jpg" alt="Hankook-tire" title="Hankook-tire">
 		</a>
 		<p class="p-price"><span class="price">393.00</span>
 		<span class="currency">&nbsp;грн.</span></p>
@@ -364,7 +366,7 @@
 		<p class="p-name">Goodyear</p>
 		<p class="p-model">Ultra Grip Extreme</p>
 		<a href="#">
-			<img src="img/1.png" alt="Goodyear-tire" title="Goodyear-tire">
+			<img src="img/1.jpg" alt="Goodyear-tire" title="Goodyear-tire">
 		</a>
 		<p class="p-price"><span class="price">90.00</span>
 		<span class="currency">&nbsp;грн.</span></p>
@@ -373,7 +375,7 @@
 		<p class="p-name">Nokian</p>
 		<p class="p-model">Hakkapeliitta R</p>
 		<a href="#">
-			<img src="img/2.png" alt="Nokian-tire" title="Nokian-tire">
+			<img src="img/2.jpg" alt="Nokian-tire" title="Nokian-tire">
 		</a>
 		<p class="p-price"><span class="price">115.00</span>
 		<span class="currency">&nbsp;грн.</span></p>
@@ -382,13 +384,13 @@
 		<p class="p-name">Hankook</p>
 		<p class="p-model">K 708 155/65 R14</p>
 		<a href="#">
-			<img src="img/3.png" alt="Hankook-tire" title="Hankook-tire">
+			<img src="img/3.jpg" alt="Hankook-tire" title="Hankook-tire">
 		</a>
 		<p class="p-price"><span class="price">393.00</span>
 		<span class="currency">&nbsp;грн.</span></p>
-	</div>		
-</main><!-- END main -->
-<aside class="aside-right"><!-- START .aside-right -->
+	</div>	
+</div>		
+<section class="section-right"><!-- START .section-right -->
 	<form action="#" method="post" class="form-right"><!-- START form .disk -->
 	<h2>Бренды:</h2>
 	<h3>Шины</h3>
@@ -423,8 +425,9 @@
 	</div>	
 	<input type="submit" value="выбрать" class="submit-select">
 	</form>
-</aside><!-- END .aside-right -->
-<section>
+</section><!-- END .section-right -->
+</main><!-- END main -->
+<aside>
 <ul class="brand-sprit">
 	<li><a href="#" class="brand-img1"></a></li>
 	<li><a href="#" class="brand-img2"></a></li>
@@ -435,7 +438,7 @@
 	<li><a href="#" class="brand-img7"></a></li>
 	<li><a href="#" class="brand-img8"></a></li>
 </ul>
-</section>
+</aside>
 <footer>
 <nav class="footer-menu">
 	<ul>

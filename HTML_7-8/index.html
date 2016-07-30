@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="UTF-8">
 	<title>PINGBULLER</title>
-	<link rel="stylesheet" href="css/reset-min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<![if !IE]>
+        <link rel="stylesheet" href="css/reset-min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style_768px.css">
+        <link rel="stylesheet" href="css/style_480px.css">
+        <link rel="stylesheet" href="css/style_320px.css">
+    <![endif]>
+    <!--[if (gte IE 9)]>
+        <link rel="stylesheet" href="css/reset-min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style_768px.css">
+        <link rel="stylesheet" href="css/style_480px.css">
+        <link rel="stylesheet" href="css/style_320px.css">
+    <![endif]-->
+    <!--[if (lte IE 8)]>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style_ie.css">
+    <![endif]-->
+ 	<!--[if lt IE 9]>
+	    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<meta name="viewport" content="width=device-width">
 </head>
 <body>
 <header>
@@ -28,16 +49,32 @@
 			<h3 class="slider__h3">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
 			<p class="slider__p">Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
 			<div class="slider__img">
-				<img src="img/iphone.png" alt="iphone" title="iphone">
+				<img src="img/Iphone-sm.png" alt="iphone-sm" title="Iphone-sm" class="slider__item1">
+				<img src="img/iphone-big.png" alt="iphone-big" title="iphone-big" class="slider__item2">
+				<button type="button" class="play" title="play"></button>
 			</div>
-			<div class="slider__left-array"></div>
-			<div class="slider__right-array"></div>
-			<div class="navigition slider">
-				<div class="navigition__item slider"><span class="navigition__item--active slider"></span></div>
-				<div class="navigition__item slider"><span class="navigition__item--active slider"></span></div>
-				<div class="navigition__item slider"><span class="navigition__item--active slider"></span></div>
-				<div class="navigition__item slider last"><span class="navigition__item--active slider"></span></div>
-			</div>
+			<button type="button" class="slider__left-array"></button>
+			<button type="button" class="slider__right-array"></button>
+			<nav class="navigition slider">
+				<ul class="clearfix">	
+					<li class="navigition__item slider">
+						<input type="radio" name="navigition__item--active" class="navigition__item--active">
+						<span class="navigition__item-decoration slider"></span>
+					</li>
+					<li class="navigition__item slider">
+						<input type="radio" name="navigition__item--active" class="navigition__item--active">
+						<span class="navigition__item-decoration slider"></span>
+					</li>
+					<li class="navigition__item slider">
+						<input type="radio" name="navigition__item--active" class="navigition__item--active">
+						<span class="navigition__item-decoration slider"></span>
+					</li>
+					<li class="navigition__item slider last">
+						<input type="radio" name="navigition__item--active" class="navigition__item--active">
+						<span class="navigition__item-decoration slider last"></span>
+					</li>
+				</ul>
+			</nav>
 		</article>
 	</div>
 </header>
@@ -65,12 +102,26 @@
 		<div class="blog__element first">
 			<h2 class="blog__element__header here">PingbulLer <span>starts here</span></h2>
 			<p class="blog__element__text">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</p>
-			<div class="navigition blog">
-				<div class="navigition__item blog"><span class="navigition__item--active blog"></span></div>
-				<div class="navigition__item blog"><span class="navigition__item--active blog"></span></div>
-				<div class="navigition__item blog"><span class="navigition__item--active blog"></span></div>
-				<div class="navigition__item blog last"><span class="navigition__item--active blog"></span></div>
-			</div>
+			<nav class="navigition blog">
+				<ul class="clearfix">	
+					<li class="navigition__item blog">
+						<input type="radio" name="navigition__item--active" class="navigition__item--active">
+						<span class="navigition__item-decoration blog"></span>
+					</li>
+					<li class="navigition__item blog">
+						<input type="radio" name="navigition__item--active" class="navigition__item--active">
+						<span class="navigition__item-decoration blog"></span>
+					</li>
+					<li class="navigition__item blog">
+						<input type="radio" name="navigition__item--active" class="navigition__item--active">
+						<span class="navigition__item-decoration blog"></span>
+					</li>
+					<li class="navigition__item blog last">
+						<input type="radio" name="navigition__item--active" class="navigition__item--active">
+						<span class="navigition__item-decoration blog last"></span>
+					</li>
+				</ul>
+			</nav>
 		</div>
 		<div class="blog__element second">
 			<h2 class="blog__element__header">RECENT UPDATES</h2>

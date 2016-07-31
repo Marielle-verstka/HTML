@@ -253,7 +253,7 @@ input[type='radio'] {
 input[type="radio"]:checked+.navigition__item-decoration.slider::before {
 	background: linear-gradient(to top, #d4d4d4 0%, #fff 100%);
 	box-sizing: border-box;
-	border: 3px solid rgba(0,0,0,.3);
+	border: 3px solid rgba(0,0,0,.7);
 }
 /******************** ABOUT ********************/
 .about__wrapper {

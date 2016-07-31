@@ -155,7 +155,8 @@ header {
 	float: right;
 	margin-right: 7px;
 	padding-top: 32px;
-	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
 }
 .blog__element.second>.blog__element__header {
 	font-size: 30px;

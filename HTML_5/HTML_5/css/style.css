@@ -142,8 +142,8 @@ header {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+/* 	justify-content: center;
+	align-items: center; */
 	margin: 0 auto;
 	background-image: url(../img/bg.jpg);
 	background-position: center;
@@ -163,6 +163,7 @@ header {
 } */
 .center {
 	width: 560px;
+	margin: auto;
 /* 	margin: 0 auto;
 	height: 80%; */
 }

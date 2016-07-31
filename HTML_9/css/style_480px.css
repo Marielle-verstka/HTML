@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 767px) and (min-width: 480px) {
 /******************** HEADER ********************/
 header {
@@ -54,7 +55,8 @@ img {
 	disedbfffplay: block;
 	margin-right: 0px;
 	width: 100%;
-	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
 	background-color: rgba(53, 41, 61, 0.9);
 	border-top: 1px solid #513e59;
 	border-bottom: 1px solid #36283e;
@@ -86,6 +88,7 @@ img {
 	height: 2px;
 	width: 0%;
 	background: #edbfff;
+	-moz-transition: width .2s ease-in-out;
 	transition: width .2s ease-in-out;
 	margin: 0 auto;
 }
@@ -179,7 +182,8 @@ img {
 }
 .adout__article {
 	width: 100%;
-	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	     box-sizing: border-box;
 	position: relative;
 }
 .adout__article.second {

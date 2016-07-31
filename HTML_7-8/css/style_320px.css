@@ -1,9 +1,10 @@
- @media screen and (max-width: 479px) and (min-width: 320px) {
+ @media screen and (max-width: 479px) {
 /******************** HEADER ********************/
 img {
 	margin: 0 auto;
 }
 header {
+	min-width: 320px;
 	height: 517px;
 	padding-top: 0px;
 }
@@ -25,20 +26,16 @@ header {
 	width: 246px;
 	box-shadow: 0 3px 5px rgba(0,0,0,0);
 	border-radius: 8px;
-	height: 45px;
-	overflow: hidden;
 	transition: .5s ease-in-out;
-	background-color: transparent;
+	background-color: rgba(53, 41, 61, 0.9);
 	margin-top: 21px;
 	position: relative;
 	z-index:20;
 }
 .menu:hover {
-	height: auto;
-	overflow: visible;
 	box-shadow: 0 3px 5px rgba(0,0,0,.16);
 	border: 1px solid #111b22;
-	background-color: rgba(53, 41, 61, 0.9);
+
 }
 .menu>.clearfix>.menu__inner:first-child {
 	border-radius: 8px 8px 0px 0px;
@@ -68,9 +65,8 @@ header {
 	margin-right: 0px;
 	width: 100%;
 	box-sizing: border-box;
-	
-	border-top: 1px solid transparent;
-	border-bottom: 1px solid transparent;
+	border-top: 1px solid #513e59;
+	border-bottom: 1px solid #36283e;
 }
 .menu__link {
 	display: block;
@@ -92,8 +88,6 @@ header {
 .menu__inner:hover,
 .menu__inner:focus {
 	background-color: #2b2230;
-		border-top: 1px solid #513e59;
-	border-bottom: 1px solid #36283e;
 }
 .menu__inner::after {
 	display: block;
@@ -177,6 +171,7 @@ header {
 .about__wrapper {
 	padding-top: 67px;
 	padding-bottom: 66px;
+	min-width: 320px;
 }
 .flex {
 	display: block;
@@ -198,7 +193,7 @@ header {
 	padding-left: 62px;
 }
 .about__header {
-	width: 365px;
+	width: 218px;
 	font-size: 24px;
 	margin-bottom: 0px;
 }
@@ -230,6 +225,7 @@ header {
 .blog__wrapper {
 	padding-top: 70px;
 	padding-bottom: 88px;
+	min-width: 320px;
 }
 .blog__element.first {
 	float: none;
@@ -319,6 +315,7 @@ header {
 }
 /******************** PARTNERS ********************/
 .partners {
+	min-width: 320px;
 	padding-top: 24px;
 	padding-bottom: 77px;
 }
@@ -361,6 +358,7 @@ header {
 }
 /******************** FOOTER ********************/
 footer {
+	min-width: 320px;
 	height: 200px;
 	padding-top: 22px;
 }
